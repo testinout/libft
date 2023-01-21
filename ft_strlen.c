@@ -6,10 +6,11 @@
 /*   By: mkrocil <mkrocil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/13 21:51:30 by mkrocil           #+#    #+#             */
-/*   Updated: 2023/01/13 23:23:41 by mkrocil          ###   ########.fr       */
+/*   Updated: 2023/01/21 12:41:03 by mkrocil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <string.h>
 
 size_t	ft_strlen(const char *str)

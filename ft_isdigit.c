@@ -6,11 +6,13 @@
 /*   By: mkrocil <mkrocil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 08:34:53 by mkrocil           #+#    #+#             */
-/*   Updated: 2023/01/14 09:11:12 by mkrocil          ###   ########.fr       */
+/*   Updated: 2023/01/21 12:32:19 by mkrocil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int	c)
+#include "libft.h"
+
+int	ft_isdigit(int c)
 {
 	return (c >= 48 && c <= 57);
 }

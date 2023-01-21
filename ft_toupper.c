@@ -6,13 +6,15 @@
 /*   By: mkrocil <mkrocil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 09:48:40 by mkrocil           #+#    #+#             */
-/*   Updated: 2023/01/14 09:49:13 by mkrocil          ###   ########.fr       */
+/*   Updated: 2023/01/21 12:29:44 by mkrocil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int	c)
+#include "libft.h"
+
+int	ft_toupper(int c)
 {
-	if(c >= 97 && c <= 122)
+	if (c >= 97 && c <= 122)
 	{
 		c = c - 32;
 		return (c);

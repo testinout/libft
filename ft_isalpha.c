@@ -6,12 +6,14 @@
 /*   By: mkrocil <mkrocil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 08:29:57 by mkrocil           #+#    #+#             */
-/*   Updated: 2023/01/14 08:55:41 by mkrocil          ###   ########.fr       */
+/*   Updated: 2023/01/21 12:36:46 by mkrocil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
- int	ft_isalpha(int	c)
- {
-	return(c >= 65 && c <= 90)
-		||(c >= 97 && c <= 122);
- }
+#include "libft.h"
+
+int	ft_isalpha(int c)
+{
+	return ((c >= 65 && c <= 90)
+		|| (c >= 97 && c <= 122));
+}

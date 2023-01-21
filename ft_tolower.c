@@ -6,13 +6,15 @@
 /*   By: mkrocil <mkrocil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 08:57:16 by mkrocil           #+#    #+#             */
-/*   Updated: 2023/01/14 09:48:05 by mkrocil          ###   ########.fr       */
+/*   Updated: 2023/01/21 12:29:51 by mkrocil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int	c)
+#include "libft.h"
+
+int	ft_tolower(int c)
 {
-	if(c >= 65 && c <= 90)
+	if (c >= 65 && c <= 90)
 	{
 		c = c + 32;
 		return (c);
