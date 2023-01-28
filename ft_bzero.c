@@ -6,14 +6,13 @@
 /*   By: mkrocil <mkrocil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/21 14:26:51 by mkrocil           #+#    #+#             */
-/*   Updated: 2023/01/21 14:30:15 by mkrocil          ###   ########.fr       */
+/*   Updated: 2023/01/28 09:23:13 by mkrocil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
-
+	ft_memset(s, 0, n);
 }
