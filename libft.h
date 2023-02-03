@@ -6,7 +6,7 @@
 /*   By: mkrocil <mkrocil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/21 12:14:09 by mkrocil           #+#    #+#             */
-/*   Updated: 2023/01/28 11:39:42 by mkrocil          ###   ########.fr       */
+/*   Updated: 2023/02/03 20:10:38 by mkrocil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <limits.h>
 # include <unistd.h>
 
+int				ft_atoi(const char *nptr);
 void			ft_bzero(void *s, size_t n);
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
@@ -35,8 +36,8 @@ size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 size_t			ft_strlen(const char *str);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 char			*ft_strrchr(const char *s, int c);
+char			*ft_strnstr(const char *big, const char *little, size_t len);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
-
 
 #endif
