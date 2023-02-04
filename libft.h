@@ -6,7 +6,7 @@
 /*   By: mkrocil <mkrocil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/21 12:14:09 by mkrocil           #+#    #+#             */
-/*   Updated: 2023/02/03 22:56:35 by mkrocil          ###   ########.fr       */
+/*   Updated: 2023/02/04 00:03:44 by mkrocil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 
 int				ft_atoi(const char *nptr);
 void			ft_bzero(void *s, size_t n);
+void			*ft_calloc(size_t nmemb, size_t size);
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
 int				ft_isascii(int c);
