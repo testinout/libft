@@ -6,7 +6,7 @@
 /*   By: mkrocil <mkrocil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 09:24:16 by mkrocil           #+#    #+#             */
-/*   Updated: 2023/02/10 20:16:56 by mkrocil          ###   ########.fr       */
+/*   Updated: 2023/02/25 13:46:48 by mkrocil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	j = 0;
 	substr = malloc(sizeof(char) * len + 1);
-	while(s[i])
+	while (s[i])
 	{
-		while(i == start && len > j)
+		while (i == start && len > j)
 		{
 			substr[j] = s[i + j];
 			j++;

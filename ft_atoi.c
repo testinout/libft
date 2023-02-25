@@ -6,7 +6,7 @@
 /*   By: mkrocil <mkrocil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/03 19:57:17 by mkrocil           #+#    #+#             */
-/*   Updated: 2023/02/03 21:58:40 by mkrocil          ###   ########.fr       */
+/*   Updated: 2023/02/25 13:46:23 by mkrocil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,27 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	base;
 	int	i;
 	int	sign;
+	int	result;
 
-	base = 0;
 	i = 0;
 	sign = 1;
-	while (nptr[i] == ' ' || nptr[i] == '\n' || nptr[i] == '\t'
-		|| nptr[i] == '\r' || nptr[i] == '\v' || nptr[i] == '\f')
+	result = 0;
+	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
 		i++;
-	if (nptr[i] == '-' || nptr[i] == '+')
-		sign = 1 - 2 * (nptr[i++] == '-');
-	while (nptr[i] >= 48 && nptr[i] <= 57)
+	if (nptr[i] == '-')
 	{
-		if (base > INT_MAX / 10 || (base == INT_MAX / 10
-				&& nptr[i] - '0' > 7))
-		{
-			if (sign == 1)
-				return (INT_MAX);
-			else
-				return (INT_MIN);
-		}
-		base = 10 * base + (nptr[i++] - '0');
+		sign *= -1;
+		i++;
 	}
-	return (base * sign);
+	else if (nptr[i] == '+')
+		i++;
+	while (nptr[i] != '\0' && (nptr[i] >= '0' && nptr[i] <= '9'))
+	{
+		result *= 10;
+		result += nptr[i] - '0';
+		i++;
+	}
+	return (result * sign);
 }
